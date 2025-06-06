@@ -8,7 +8,7 @@ export const createCompanion = async (formData: CreateCompanion) => {
   const supabase = createSupabaseClient();
 
   const { data, error } = await supabase
-    .from("companions")
+    .from("companion")
     .insert({...formData, author})
     .select()
 
