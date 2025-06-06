@@ -85,7 +85,7 @@ const CompanionComponent = ({ subject, topic, name, userName, userImage, style, 
             serverMessages: [],
         }
 
-        // @ts-expect-error
+        // @ts-expect-error description: vapi.start expects a CreateAssistantDTO or a string, but we are passing a string here
         vapi.start(configureAssistant(voice, style), assistantOverrides)
     }
 
